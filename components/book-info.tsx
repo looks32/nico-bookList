@@ -1,9 +1,7 @@
 import styles from "../css/bookInfoList.module.css";
 
-const API_URL = "https://books-api.nomadcoders.workers.dev/list?name="
-
 async function getBook(id: string) {
-  const response = await fetch(`${API_URL}/${id}`);
+  const response = await fetch(`https://books-api.nomadcoders.workers.dev/list?name=/${id}`);
   return response.json();
 }
 
