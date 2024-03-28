@@ -1,15 +1,16 @@
 .list {
 	display: flex;
 	flex-wrap: wrap;
-	margin-left:-10px;
+	margin-left:-20px;
 }
 .list li {
-	width:calc(25% - 15px);
-	border:1px solid red;
-	margin-left:15px;
-	margin-top:15px;
-	padding-bottom: 10px;
+	width:calc(25% - 20px);
+	border:2px solid #fff;
+	margin-left:20px;
+	margin-top:20px;
+	padding-bottom: 20px;
 	text-align: center;
+	font-size:20px;
 }
 .list li img {
 	width: 100%;
@@ -18,10 +19,19 @@
 .list li strong {
 	display: block;
 	padding: 0 10px;
+	margin-top:10px;
 	line-height: 1.5;
 }
 
 .list li a {
 	display: block;
-	margin-top: 10px;
+}
+
+.list li a:hover p {
+	color:#ff0;
+}
+
+.list li p {
+	margin-top:10px;
+	font-size:18px;
 }

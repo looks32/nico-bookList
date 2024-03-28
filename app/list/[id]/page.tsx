@@ -1,9 +1,26 @@
-import BookInfo from "../../../components/book-info";
+import BookInfo, {getBook} from "../../../components/book-info";
 
-export default async function page({params: { id }}){
+
+// export const metadata = {
+//   title: "List",
+// };
+
+interface IParams {
+  params:{id:string}
+}
+
+
+export async function generateMetadata({params: { id }}:IParams){
+  const books = await getBook(id);
+  return {
+    title: books.results.list_name
+  }
+}
+
+export default async function page({params: { id }}:IParams){
   return (
     <div>
-	  <BookInfo id={id}/>
+	    <BookInfo id={id}/>
     </div>
   );
 }

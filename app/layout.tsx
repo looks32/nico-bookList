@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Navigation from "../components/navigation";
-import "../css/app.css";
+import "../css/reset.css";
 
 export const metadata: Metadata = {
   title: {
@@ -13,6 +13,9 @@ export const metadata: Metadata = {
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/neodgm/neodgm-webfont@1.530/neodgm/style.css"/>
+      </head>
       <body>
         <Navigation />
         <div className="main_inner">

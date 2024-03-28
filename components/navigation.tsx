@@ -12,15 +12,16 @@ export default function Navigation(){
 			<ul>
 				<li>
 					<Link href="/">
-						HOME{path === "/" ? "💙" : ""}
+						HOME{path === "/" ? " *" : ""}
 					</Link>
 				</li>
 				<li>
 					<Link href="/about">
-						ABOUT{path === "/about" ? "💙" : ""}
+						ABOUT{path === "/about" ? " *" : ""}
 					</Link>
 				</li>
 			</ul>
+			<h1>Lilbray</h1>
 		</nav>
 	)
 }
