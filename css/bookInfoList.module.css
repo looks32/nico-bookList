@@ -1,0 +1,27 @@
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left:-10px;
+}
+.list li {
+	width:calc(25% - 15px);
+	border:1px solid red;
+	margin-left:15px;
+	margin-top:15px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+.list li img {
+	width: 100%;
+}
+
+.list li strong {
+	display: block;
+	padding: 0 10px;
+	line-height: 1.5;
+}
+
+.list li a {
+	display: block;
+	margin-top: 10px;
+}
