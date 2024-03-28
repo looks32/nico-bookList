@@ -4,7 +4,7 @@ import "../css/app.css";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Library",
+    template: "%s | 하세기!",
     default: "Library",
   },
   description: "The best movies on the best framework",
