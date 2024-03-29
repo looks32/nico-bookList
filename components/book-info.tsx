@@ -14,9 +14,13 @@ export default async function BookInfo({ id }: { id: string }) {
 			{book.results.books.map((b) => (
 				<li key={b.rank}>
 					<a href={b.amazon_product_url} title={b.title} target="_blank">
-						<img src={b.book_image} alt={b.title} />
-						<strong>{b.title}</strong>
-						<p>Buy Now</p>
+						<div className={styles.img_wrap}>
+							<img src={b.book_image} alt={b.title} />
+						</div>
+						<div>
+							<strong>{b.title}</strong>
+							<p>Buy Now</p>
+						</div>
 					</a>
 				</li>
 			))}			

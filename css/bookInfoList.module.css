@@ -39,3 +39,8 @@
 	margin-top:10px;
 	font-size:18px;
 }
+
+.img_wrap {
+	height: 320px;
+	overflow: hidden;
+}
