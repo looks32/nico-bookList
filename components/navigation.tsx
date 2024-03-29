@@ -21,7 +21,7 @@ export default function Navigation(){
 					</Link>
 				</li>
 			</ul>
-			<h1>Lilbray</h1>
+			<h1>Lilbray ^_~</h1>
 		</nav>
 	)
 }
