@@ -89,3 +89,16 @@ li {
   font-size: 25px;
   line-height: 1.5;
 }
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 30%;
+  background: #fff;
+}
+
+body::-webkit-scrollbar-track {
+  background: #000084;
+}

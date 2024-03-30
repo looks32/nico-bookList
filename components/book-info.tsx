@@ -21,6 +21,7 @@ export default async function BookInfo({ id }: { id: string }) {
 							<strong>{b.title}</strong>
 							<p>Buy Now</p>
 						</div>
+						<span>{b.rank}</span>
 					</a>
 				</li>
 			))}			

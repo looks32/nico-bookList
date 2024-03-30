@@ -70,6 +70,17 @@
 	font-size:18px;
 }
 
+.list li span {
+	display: block;
+	position: absolute;
+	left: -16px;
+	top: -16px;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	background-color: red;
+}
+
 .img_wrap {
 	padding: 20px;
 	height: 320px;
