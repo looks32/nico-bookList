@@ -6,10 +6,25 @@
 }
 .list li {
 	display: inline-block;
+	position: relative;
+	top: 20px;
+	opacity: 0;
 	margin-right:15px;
 	margin-top: 15px;
-	
+	animation: cate 0.5s forwards;
 }
+
+@keyframes cate {
+	0% {
+		top: 20px;
+		opacity: 0;
+	}
+	100% {
+		top: 0;
+		opacity: 1;
+	}
+}
+
 
 .list li a {
 	display: block;

@@ -11,8 +11,8 @@ export default async function BookInfo({ id }: { id: string }) {
 	<>
   		<h3>{book.results.list_name}</h3>
 		<ul className={styles.list}>
-			{book.results.books.map((b) => (
-				<li key={b.rank}>
+			{book.results.books.map((b,i) => (
+				<li key={b.rank} style={{'animationDelay':100*i+"ms"}}>
 					<a href={b.amazon_product_url} title={b.title} target="_blank">
 						<div className={styles.img_wrap}>
 							<img src={b.book_image} alt={b.title} />

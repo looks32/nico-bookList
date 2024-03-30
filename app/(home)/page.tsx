@@ -19,8 +19,8 @@ export default async function Home() {
 	<>
       <h2>The New York Times Best Seller Explorer</h2>
 	  <div className={styles.list}>
-		{books.results.map((book) => (
-		  <li key={book.list_name_encoded}>
+		{books.results.map((book,i) => (
+		  <li key={book.list_name_encoded} style={{'animationDelay':100*i+"ms"}}>
 			<Link href={`/list/${book.list_name_encoded}`}>{book.display_name}</Link>
 		  </li>
 		))}
