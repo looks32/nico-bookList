@@ -1,6 +1,8 @@
+import "../css/reset.css";
 import { Metadata } from "next";
 import Navigation from "../components/navigation";
-import "../css/reset.css";
+import Footer from "../components/footer";
+import BottomScroll from "../components/bottomScroll";
 
 export const metadata: Metadata = {
   title: {
@@ -21,6 +23,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="main_inner">
           {children}
         </div>
+        <Footer/>
+        <BottomScroll/>
       </body>
     </html>
   );
